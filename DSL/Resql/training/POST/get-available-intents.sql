@@ -39,7 +39,7 @@ WHERE rn = 1
       FROM connected_intents
   )
   AND (:search IS NULL OR intent ILIKE '%' || :search || '%')
-  AND status = 'ACTIVE'
+  AND status != 'DELETED'
 ORDER BY
     CASE WHEN :sorting = 'intent asc' THEN intent END ASC,
     CASE WHEN :sorting = 'intent desc' THEN intent END DESC
