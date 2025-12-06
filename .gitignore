@@ -22,8 +22,3 @@
 **/.eslintcache
 **/npm-debug.log*
 /.idea/
-
-# Cursor IDE
-.cursor/
-.cursorrules
-.cursorrules.json
